@@ -1,0 +1,33 @@
+{
+    "name": "Natural Home",
+    "address": "2404 Nutwood Avenue, Fullerton, CA 92831",
+    "description": "Comfy apartments near CSUF",
+    "image": "https://ipfs.io/ipfs/QmWpDN5r6Y8UvLKq5q4NnKKUC4qrQr7VroZfSgXCwowBZt?filename=image4.jpeg",
+    "id": "3",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 10
+        },
+        {
+            "trait_type": "Type of Residence",
+            "value": "Single family residence"
+        },
+        {
+            "trait_type": "Bed Rooms",
+            "value": 3
+        },
+        {
+            "trait_type": "Bathrooms",
+            "value": 3
+        },
+        {
+            "trait_type": "Square Feet",
+            "value": 2202
+        },
+        {
+            "trait_type": "Year Built",
+            "value": 2020
+        }
+    ]
+}
