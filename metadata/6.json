@@ -1,17 +1,17 @@
 {
-    "name": "Luxury NYC Penthouse",
-    "address": "157 W 57th St APT 49B, New York, NY 10019",
-    "description": "Luxury Penthouse located in the heart of NYC",
-    "image": "https://ipfs.io/ipfs/QmbwaqNNUwoBEDARyTnGgnbs36mU8S9nCxtGm3Q69ztsAf?filename=image1.jpeg",
-    "id": "1",
+    "name": "Meadow View",
+    "address": "3155 Ocean Avenue, Santa Monica, CA 90405",
+    "description": "Luxurious ocean view apartments",
+    "image": "https://ipfs.io/ipfs/QmesH2ccGVVKN8ga8e8vkaKx859UfzjyFp1Ru2kwGZMVBZ?filename=image6.jpg",
+    "id": "6",
     "attributes": [
         {
             "trait_type": "Purchase Price",
-            "value": 20
+            "value": 35
         },
         {
             "trait_type": "Type of Residence",
-            "value": "Condo"
+            "value": "Townhouse"
         },
         {
             "trait_type": "Bed Rooms",
@@ -19,15 +19,15 @@
         },
         {
             "trait_type": "Bathrooms",
-            "value": 3
+            "value": 2
         },
         {
             "trait_type": "Square Feet",
-            "value": 2200
+            "value": 1800
         },
         {
             "trait_type": "Year Built",
-            "value": 2013
+            "value": 2019
         }
     ]
 }
