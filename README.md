@@ -2,7 +2,7 @@
  complete final project for web3 application of Real Estate listing.
  
  # Topic:
- Buy a real estate from a real estate listing in form of an NFT.
+ Buy a real estate from a real estate listing.
 
 # Team Members:
 1.Shivba Pawar(CWID 885965129)
