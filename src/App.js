@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
+import backgroundImage from './assets/background.jpg';
 
 // Components
 import Navigation from './components/Navigation';
@@ -61,9 +62,16 @@ function App() {
   }
 
   return (
-    <div>
+
+    <div style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+      backgroundColor: 'rgba(0, 0, 0, 1)'
+    }}>
       <Navigation account={account} setAccount={setAccount} />
-      <Search />
+      
 
       <div className='cards__section'>
 
@@ -78,7 +86,7 @@ function App() {
                 <img src={home.image} alt="Home" />
               </div>
               <div className='card__info'>
-                <h4>{home.attributes[0].value} ETH</h4>
+                <h4>{home.name}</h4>
                 <p>
                   <strong>{home.attributes[2].value}</strong> bds |
                   <strong>{home.attributes[3].value}</strong> ba |

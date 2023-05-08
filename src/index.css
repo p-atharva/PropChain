@@ -40,8 +40,9 @@ nav {
 }
 
 .nav__brand img {
-  max-width: 125px;
+  max-width: 75px;
   height: auto;
+  border-radius: 60px;
 }
 
 .nav__brand h1 {
@@ -146,10 +147,18 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  
 }
 
 .cards__section h3 {
-  margin: 50px 0 20px;
+  margin: 50px 0px 20px;
+  color: #FFFFFF;
+  margin-left: 42.5%;
+  background-color: var(--clr-blue);
+  width: 165px;
+  padding: 10px;
+  border-radius: 10px;
+  
 }
 
 .cards {
@@ -164,6 +173,8 @@ header {
   height: 275px;
 
   border: 1px solid var(--clr-black);
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   margin: 10px auto;
 
   cursor: pointer;
@@ -179,11 +190,12 @@ header {
 .card__image {
   position: absolute;
   width: 100%;
-  z-index: -1;
+  border-radius: 30px;
 }
 
 .card__image img {
   max-width: 100%;
+  border-radius: 30px;
 }
 
 .card__info {
@@ -193,7 +205,7 @@ header {
   background-color: var(--clr-white);
 
   padding: 5px 10px;
-
+  border-radius: 30px;
   position: absolute;
   bottom: 0;
   left: 0;

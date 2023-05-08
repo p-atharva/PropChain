@@ -1,5 +1,6 @@
 import { ethers } from 'ethers';
-import logo from '../assets/logo.svg';
+import logo from '../assets/icon.svg';
+import '../assets/CSS/navStyles.css';
 
 const Navigation = ({ account, setAccount }) => {
     const connectHandler = async () => {
@@ -9,7 +10,7 @@ const Navigation = ({ account, setAccount }) => {
     }
 
     return (
-        <nav>
+        <nav className="navbar">
             <ul className='nav__links'>
                 <li><a href="#">Buy</a></li>
                 <li><a href="#">Rent</a></li>
@@ -18,7 +19,7 @@ const Navigation = ({ account, setAccount }) => {
 
             <div className='nav__brand'>
                 <img src={logo} alt="Logo" />
-                <h1>Real Estate Listings</h1>
+                <h1>PropChain</h1>
             </div>
 
             {account ? (
