@@ -30,9 +30,8 @@ MetaMask should be installed.
 
 1.Used IPFS for storing the Real Estate Properties rather then local storage.  
 2.Used OpenZepplin library to create a Real Estate Property NFT by reading the IPFS data.  
-3.UI Changes  
+3.UI 
 4.Implemented the Escrow mechanism to facilitate the sale of the Real Estate Property.  
- '''(An Escrow mechanism is a financial arrangement in which a third party holds and regulates payment of the funds required for two parties involved in a given transaction. In this project, an Escrow mechanism was implemented to facilitate the sale of Real Estate Properties. This means that the payment for the property is held by a third party until the transaction is completed, which provides security for both the buyer and seller)'''
-
+ (An Escrow mechanism is a financial arrangement in which a third party holds and regulates payment of the funds required for two parties involved in a given transaction. In this project, an Escrow mechanism was implemented to facilitate the sale of Real Estate Properties. This means that the payment for the property is held by a third party until the transaction is completed, which provides security for both the buyer and seller)  
 5. Implemented test cases for all escrow smart contracts. Test cases can be checked using the command npx hardhat test.
 
