@@ -27,7 +27,7 @@ const Navigation = ({ account, setAccount }) => {
                     type="button"
                     className='nav__connect'
                 >
-                    {account.slice(0, 6) + '...' + account.slice(38, 42)}
+                    {account.slice(36, 42)}
                 </button>
             ) : (
                 <button

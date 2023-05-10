@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react';
+//import {animated} from 'react-spring';
+//import { use3dEffect } from 'use-3d-effect';
+import * as React from 'react'
 import { ethers } from 'ethers';
 import backgroundImage from './assets/background.jpg';
+import Modal from 'react-bootstrap/Modal';
 
 // Components
 import Navigation from './components/Navigation';
-import Search from './components/Search';
+//import Search from './components/Search';
 import Home from './components/Home';
 
 // ABIs
@@ -23,6 +27,7 @@ function App() {
   const [homes, setHomes] = useState([])
   const [home, setHome] = useState({})
   const [toggle, setToggle] = useState(false);
+
 
   const loadBlockchainData = async () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -62,13 +67,13 @@ function App() {
   }
 
   return (
-
+    <div className='overlay'>
     <div style={{
       backgroundImage: `url(${backgroundImage})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
-      backgroundColor: 'rgba(0, 0, 0, 1)'
+      zIndex: '-1',
     }}>
       <Navigation account={account} setAccount={setAccount} />
       
@@ -78,7 +83,6 @@ function App() {
         <h3>Homes For You</h3>
 
         <hr />
-
         <div className='cards'>
           {homes.map((home, index) => (
             <div className='card' key={index} onClick={() => togglePop(home)}>
@@ -97,14 +101,15 @@ function App() {
             </div>
           ))}
         </div>
-
       </div>
-
+      </div>
       {toggle && (
         <Home home={home} provider={provider} account={account} escrow={escrow} togglePop={togglePop} />
       )}
 
     </div>
+
+    
   );
 }
 

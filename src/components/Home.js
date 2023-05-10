@@ -1,5 +1,7 @@
 import { ethers } from 'ethers';
 import { useEffect, useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 import close from '../assets/close.svg';
 
@@ -134,7 +136,7 @@ const Home = ({ home, provider, account, escrow, togglePop }) => {
 
                     {owner ? (
                         <div className='home__owned'>
-                            Owned by {owner.slice(0, 6) + '...' + owner.slice(38, 42)}
+                            Owned by {'Account ending with ' + owner.slice(36, 42)}
                         </div>
                     ) : (
                         <div>

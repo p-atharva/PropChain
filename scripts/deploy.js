@@ -12,7 +12,7 @@ const tokens = (n) => {
 
 async function main() {
   // Setup accounts
-  const [buyer, seller, inspector, lender] = await ethers.getSigners()
+  const [buyer, seller, inspector, lender] = await ethers.getSigners();
 
   // Deploy Real Estate
   const RealEstate = await ethers.getContractFactory('RealEstate')
@@ -56,13 +56,13 @@ async function main() {
   transaction = await escrow.connect(seller).list(3, buyer.address, tokens(10), tokens(5))
   await transaction.wait()
   
-  transaction = await escrow.connect(seller).list(4, buyer.address, tokens(10), tokens(5))
+  transaction = await escrow.connect(seller).list(4, buyer.address, tokens(10), tokens(2))
   await transaction.wait()
 
-  transaction = await escrow.connect(seller).list(5, buyer.address, tokens(20), tokens(5))
+  transaction = await escrow.connect(seller).list(5, buyer.address, tokens(20), tokens(4))
   await transaction.wait()
 
-  transaction = await escrow.connect(seller).list(6, buyer.address, tokens(35), tokens(5))
+  transaction = await escrow.connect(seller).list(6, buyer.address, tokens(35), tokens(8))
   await transaction.wait()
 
   console.log(`Finished.`)
