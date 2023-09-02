@@ -5,8 +5,8 @@
  Buy a real estate from a real estate listing.
 
 # Team Members:
-1.Shivba Pawar(CWID 885965129)  
-2.Atharva Pathak(CWID 885957316)
+1.Shivba Pawar  
+2.Atharva Pathak
 
 # How to run:
 
